@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CHANEL — Two Email Designs</title>
+  <style>
+    :root { --ink:#111; --muted:#666; --line:#e6e6e6; --bg:#f4f4f4; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: Helvetica, Arial, sans-serif; background:var(--bg); color:var(--ink); }
+    .bar { background:#000; color:#fff; padding:18px 24px; display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap; }
+    .bar h1 { margin:0; font-size:13px; letter-spacing:.18em; font-weight:500; text-transform:uppercase; }
+    .bar p { margin:0; font-size:12px; color:#bbb; }
+    .bar a { color:#fff; }
+    .wrap { max-width:1320px; margin:0 auto; padding:32px 20px 80px; display:grid; grid-template-columns:1fr 1fr; gap:40px; }
+    .col h2 { margin:0 0 6px; font-size:15px; letter-spacing:.12em; text-transform:uppercase; }
+    .col .note { margin:0 0 18px; font-size:13px; color:var(--muted); line-height:1.45; }
+    .frame { background:#fff; border:1px solid var(--line); box-shadow:0 8px 30px rgba(0,0,0,.06); }
+    iframe { display:block; width:100%; height:2200px; border:0; background:#fff; }
+    @media (max-width: 980px) { .wrap { grid-template-columns:1fr; } iframe { height:1800px; } }
+  </style>
+</head>
+<body>
+  <div class="bar">
+    <div>
+      <h1>CHANEL — two separate emails</h1>
+      <p>Design 1 from the Winter image · Design 2 from the Email Love article · Shared 2-col footer</p>
+    </div>
+    <p>
+      <a href="winter-constellation.html">Open Design 1</a>
+      &nbsp;·&nbsp;
+      <a href="fathers-day.html">Open Design 2</a>
+    </p>
+  </div>
+  <div class="wrap">
+    <div class="col">
+      <h2>Design 1 — from the image</h2>
+      <p class="note">Winter Constellation. Two product blocks. SHOP NOW. Holiday packaging preheader. Same footer.</p>
+      <div class="frame"><iframe src="winter-constellation.html" title="Winter Constellation email"></iframe></div>
+    </div>
+    <div class="col">
+      <h2>Design 2 — from the article</h2>
+      <p class="note">Father's Day. Product still, then Watch the Film. Complimentary shipping preheader. Same footer.</p>
+      <div class="frame"><iframe src="fathers-day.html" title="Father's Day email"></iframe></div>
+    </div>
+  </div>
+</body>
+</html>
